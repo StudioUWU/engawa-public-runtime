@@ -1,0 +1,3 @@
+patches/*.patch -whitespace
+pkgconfig/*/*.pc -whitespace
+portfile.cmake whitespace=cr-at-eol

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "product": "EngawaRuntime",
+  "webkit": {
+    "repository": "https://github.com/WebKit/WebKit.git",
+    "revision": "cf9c1ca91a47666c6aa6c80310936ed064f122e0",
+    "identifier": "313706@main"
+  },
+  "inputs": {
+    "vcpkg_manifest": {
+      "path": "vcpkg.json",
+      "sha256": "7d194725a24fa2c55185a1b3919f5058c6b77a28bd5ab4eaefc1d7f086a227e9"
+    },
+    "vcpkg_configuration": {
+      "path": "vcpkg-configuration.json",
+      "sha256": "5269cbb92e51b629e913e292fdef959341b6e25c1a9c60613eb4128714fa5d9f"
+    }
+  },
+  "vcpkg": {
+    "default_registry": {
+      "kind": "git",
+      "repository": "https://github.com/microsoft/vcpkg",
+      "baseline": "36fb57eb3878cc3422351a91d3e87c328388dabd"
+    },
+    "additional_registries": [
+      {
+        "kind": "git",
+        "repository": "https://github.com/WebKitForWindows/WebKitRequirements",
+        "baseline": "0895db3bb0f653fab1ef3d377d2c231c971063df",
+        "packages": [
+          "cairo",
+          "curl",
+          "icu",
+          "libwebp",
+          "openssl",
+          "vcpkg-tool-meson",
+          "zlib",
+          "zlib-ng"
+        ]
+      }
+    ],
+    "overrides": [
+      {
+        "name": "ngtcp2",
+        "version": "1.12.0"
+      }
+    ],
+    "overlay_triplets": [
+      "./WebKitLibraries/triplets"
+    ]
+  }
+}

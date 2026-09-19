@@ -1,0 +1,529 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "1c56858c5b0aeed17f3f39b87b19a1354f24bc9cc2c5ffb1b14cd9b84d0524c3"
+    },
+    {
+      "path": "build_public_engine.py",
+      "sha256": "0cdafb7fffb2512b1a5470888a9b013d0a2e6cd4aad8f36d5acdeb01f593d830"
+    },
+    {
+      "path": "BuildSupport/Guides/SDK-1.4.0-Public-Engine-Build.md",
+      "sha256": "172c6983266e062db1199eab33724d2986bd668bafa89415aaf9063a723a2cf6"
+    },
+    {
+      "path": "BuildSupport/Redesign/Linux/Dockerfile",
+      "sha256": "23a41654e0b8cbb656ea84f34e5cc7dd856762b75186199b6afe0387ae0b5e8f"
+    },
+    {
+      "path": "BuildSupport/Redesign/Linux/Ubuntu26.lock.json",
+      "sha256": "a15e68d0675262595feef189a802584a81a7900a513c28ef6c03f72541ced9c4"
+    },
+    {
+      "path": "BuildSupport/Tools/MacOS/Brewfile",
+      "sha256": "9e84bf75e65aab8700fc82316a940e6e13377cc0f347a36c1312ac3896ee67e5"
+    },
+    {
+      "path": "licenses/BSD-2-Clause-Engawa-Tools.txt",
+      "sha256": "3277be8eb8a0562f6e35ea70d6c28b8b79425fc382c2900f862af93d71d14435"
+    },
+    {
+      "path": "Overlay/BuildScripts/Windows/gperf_launcher.c",
+      "sha256": "ae90af5d03c5c6956090789c31502e4f06c9a56c9bf64911b7f5f9d64773e23f"
+    },
+    {
+      "path": "Overlay/Dependencies/EngawaRuntime.lock.json",
+      "sha256": "ea180dd2bd2f3332c2b797bd8e20ad98b7857ed15ae55c75b4e3eba24f1a0f9d"
+    },
+    {
+      "path": "Overlay/SDK/EngawaRuntimeFeaturePolicy.json",
+      "sha256": "e70b8295dbeaabd862d35a741b2a4aed3bbc012bd18a8e61a4a070e2723da9c2"
+    },
+    {
+      "path": "Overlay/SDK/EngawaRuntimeUtilsWindowsExports.def",
+      "sha256": "ff046c8274bbfc74e6935add75ea2e5c996321efee8feb6da314e3141c88ccfa"
+    },
+    {
+      "path": "Overlay/SDK/EngawaRuntimeVersion.cmake",
+      "sha256": "e2c2dc9c5fba8b400cee571bb3564ae64f9dbd21a7b2beda519ec222a15636e3"
+    },
+    {
+      "path": "Overlay/SDK/include/engawa_webcore.h",
+      "sha256": "12bcd274934b3f104c2fc735330f6eb46acb39c0b7a7be148ecf3045b755b181"
+    },
+    {
+      "path": "Overlay/SDK/licenses/ENGAWA-LGPL-NOTICE.txt",
+      "sha256": "70226e206ac5c9976976230f342a32ae05544daf6585859e29b978a254b7e199"
+    },
+    {
+      "path": "Overlay/SDK/licenses/ENGAWA-PUBLIC-BSD-2-CLAUSE.txt",
+      "sha256": "89d2a927a3fd51e02c48cbd91512ea4683afeb757a4289e7928989de906f0f86"
+    },
+    {
+      "path": "Overlay/SDK/licenses/HarfBuzz/11.2.1/COPYING",
+      "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64"
+    },
+    {
+      "path": "Overlay/SDK/licenses/ICU/77.1/LICENSE",
+      "sha256": "451167c55c0fa447cc2d5632714f5e3c567fe4f1e1badefab2c1333852198aca"
+    },
+    {
+      "path": "Overlay/SDK/licenses/libwpe/1.16.3/COPYING",
+      "sha256": "35bef295cedbbf179eaee14328002587a0e7dc08ebf3f15ea080a6f2815f0d7b"
+    },
+    {
+      "path": "Overlay/Source/bmalloc/PlatformEngawa.cmake",
+      "sha256": "bb28b63095f5a511ebeb8dffe5f74aa4661f266f86b33fd8a5c7453d90a07236"
+    },
+    {
+      "path": "Overlay/Source/cmake/EngawaInProcessWPELoader.c",
+      "sha256": "29b82c34155531a476eec388e6984bb5c3359b8f011a0285f3cc9fac635810d1"
+    },
+    {
+      "path": "Overlay/Source/cmake/EngawaRuntimeUtilsAnchor.cpp",
+      "sha256": "ef720808a61baf4b7f2d8c6a1b341a8fd2138668dfb043de64ef8e4d96287ffd"
+    },
+    {
+      "path": "Overlay/Source/cmake/EngawaSharedLibraries.cmake",
+      "sha256": "8a66ac32321f4a12e35a0894bdc32da6aead76a6bd816a6b92e6a309965b63d0"
+    },
+    {
+      "path": "Overlay/Source/cmake/OptionsEngawa.cmake",
+      "sha256": "2fd0b59174c8dbb9186cc67c389c4dd019111480925e5b4e012d81380e21fcde"
+    },
+    {
+      "path": "Overlay/Source/JavaScriptCore/PlatformEngawa.cmake",
+      "sha256": "4d75d1f8c5e41c727ce595bca760810923ec484914f6baab8964a46c31ff689c"
+    },
+    {
+      "path": "Overlay/Source/PlatformEngawa.cmake",
+      "sha256": "47330c9938c6de09422ec2803017f745968b50903078757309dbd5f89669746c"
+    },
+    {
+      "path": "Overlay/Source/ThirdParty/ANGLE/PlatformEngawa.cmake",
+      "sha256": "049a04c22d8494884a8baeb1ca36f89daa0c60cfc36d331ae643ef0670d542b4"
+    },
+    {
+      "path": "Overlay/Source/WebCore/PAL/pal/PlatformEngawa.cmake",
+      "sha256": "4c469bdb9da0c6bbb5e5eb75f44cbf718af39d88340cd1a0816ffe8a33ffde49"
+    },
+    {
+      "path": "Overlay/Source/WebCore/platform/engawa/EngawaInProcessWebCorePrototype.cpp",
+      "sha256": "76aa45a1eaf985574715f343200d27d4bb19d86a57e019d84ac13b6d09043b52"
+    },
+    {
+      "path": "Overlay/Source/WebCore/platform/engawa/EngawaInProcessWebCorePrototype.h",
+      "sha256": "40e804d2cd70f4d13eae525bb223fb7c610e7945e377dd737fc3c63bf4e5aa51"
+    },
+    {
+      "path": "Overlay/Source/WebCore/platform/engawa/EngawaWebCoreBridge.cpp",
+      "sha256": "2a707f1bb13f5d73c5d669d145d31d6640d80a9d6c6e9b50f6189b2a5ed8f1c7"
+    },
+    {
+      "path": "Overlay/Source/WebCore/PlatformEngawa.cmake",
+      "sha256": "9556a2df4d9e2eeaef9fc5a82745a5532537408c45d87fb9c92a3863eeeaeeb0"
+    },
+    {
+      "path": "Overlay/Source/WTF/wtf/PlatformEngawa.cmake",
+      "sha256": "4d75d1f8c5e41c727ce595bca760810923ec484914f6baab8964a46c31ff689c"
+    },
+    {
+      "path": "Overlay/Tools/EngawaRuntime/ConfigureEngawaRuntimeUtilsParentLink.cmake",
+      "sha256": "70c78d6a3a8318b8f80ba5010651378d24a8f0dd71731a1fa797a20d2ccb545d"
+    },
+    {
+      "path": "Overlay/Tools/EngawaRuntime/EngawaRuntimeUtils/CMakeLists.txt",
+      "sha256": "cc5fe18f9cdc947b8f7ed688dccec3221a9c1f438d4a13c905cb124c659ad686"
+    },
+    {
+      "path": "Overlay/Tools/EngawaRuntime/EngawaRuntimeUtils/EngawaRuntimeUtils.cpp",
+      "sha256": "400a8d92dc75141659fc8eef6ccb9b0d6ec2ed59194b37508d26ab6fd21de364"
+    },
+    {
+      "path": "Overlay/Tools/EngawaRuntime/EngawaRuntimeUtils/IntegrateEngawaRuntimeUtils.cmake",
+      "sha256": "a2e290e83c26be73549822f24c08efbdf6f8bc58f73806d9d1d00ba8b5c03f68"
+    },
+    {
+      "path": "Overlay/Tools/PlatformEngawa.cmake",
+      "sha256": "c01586c55a0f755df030e0c7250fb2054da28005a5e372e8aac80cef5f96e57d"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/.gitattributes",
+      "sha256": "031ea8369cb733f314d3e28a57fa7674148dabc3b627f95cc29fa25ab6354ea7"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/ORIGIN.md",
+      "sha256": "254c84d4c6b5f98f0d4fd8e99fe21e139e6ddb031052e9951506739f1946734b"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/patches/0001-Add-CMake-platform.patch",
+      "sha256": "e6c9699b3ee94befdfc02ea4dfb57a8cfc56f5a5123d8df09ed156fff620e6ab"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/patches/0002-Remove-install-suffix-on-Windows.patch",
+      "sha256": "0ae8e39d0378b75d4b98bacd656f252c8abbd3932791633dc8b732e5d329fd07"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/patches/0003-Support-cross-compilation-in-CMake-build.patch",
+      "sha256": "5cf0f99f5d330e1ad1825468ff44b43321e7da1fe111d7ff484eb01d0883bc74"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/patches/0004-Cross-compilation-support-for-pkgdata.patch",
+      "sha256": "736ae8d7d9a93c234589df6f28b14f49dbf39a6b2dcd319925315aeafbd9af4e"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/patches/0005-Do-not-export-static-data-entry-point.patch",
+      "sha256": "0b80b4e76ecdaf61c46c0a1caa2fa7e209408c914dddbb9649d2212ccd6df0e4"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/pkgconfig/debug/icu-i18n.pc",
+      "sha256": "323e36b8ab8de684d6a11a26d4561450819181eae8beec1e35ea25b198c517e6"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/pkgconfig/debug/icu-io.pc",
+      "sha256": "4c558476af7c97c89d7ddcd596339418bbb752dce468929469cd087894df13bc"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/pkgconfig/debug/icu-uc.pc",
+      "sha256": "c1aa96f8b70ec205723dc06510c6828f1b72131de598d5561f0a93d85fa7d668"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/pkgconfig/release/icu-i18n.pc",
+      "sha256": "66f0b1757629f3080cfa788b275adc453b78b65d27a391aa3d28c847bb835831"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/pkgconfig/release/icu-io.pc",
+      "sha256": "ce0b6a22c8173b17f32273a7fea4d62d1a926cedec5bb6f8032a156dc19b3646"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/pkgconfig/release/icu-uc.pc",
+      "sha256": "9880e43a46b5f5c31f59835b974ff14416ccad303598d02dd34f9de82be887cf"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/portfile.cmake",
+      "sha256": "928aa94b0af5cafdc04b16dc2eda0b171caf8e7906c118d93c4ffed40a6a8193"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils/icu/vcpkg.json",
+      "sha256": "86cd94bc3ab2b67a9a63240f6335efc6ed73e015fa1a2da96a14af53bedbf112"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils-production/libpsl/portfile.cmake",
+      "sha256": "79b95bdbc0affa33ccf5f2fca0e94b723c57abac5f43c07eabf0ca8d5b8d9938"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/ports/engawaruntimeutils-production/libpsl/vcpkg.json",
+      "sha256": "3bd58c7bfa8eaf1375b273ce2b3a03116fa2d3580367f53149e0a4c8754eb4dc"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/triplets/x64-windows-engawaruntimeutils-production.cmake",
+      "sha256": "9ae9a0a217de4d288c6f8eb8e76bf3173745fb933b4b10d010b01432cc2ef2b5"
+    },
+    {
+      "path": "Overlay/WebKitLibraries/triplets/x64-windows-engawaruntimeutils.cmake",
+      "sha256": "f82ee51d28ed3b920f555e4a3555021c328ad252252994beb3588cb5d9912dbf"
+    },
+    {
+      "path": "Patches/WebKit.patch",
+      "sha256": "da1ed9f1283b9e257168823ae4ac194957306afa08258a784933a82e0cde65ed"
+    },
+    {
+      "path": "prepare_source.py",
+      "sha256": "90af6ad7b4a8ad8c459d8081de9874108c184d9d6a5c7e9a75544a2cc8d7faca"
+    },
+    {
+      "path": "README.md",
+      "sha256": "3219e8efb2e85bcd104a5c40c0547f12f414f595510918a1c2baa6b19f371fa9"
+    }
+  ],
+  "product": "EngawaRuntime public engine",
+  "schema_version": 2,
+  "sdk_version": "1.4.0",
+  "source_identity": {
+    "build_support": [
+      {
+        "path": "Guides/SDK-1.4.0-Public-Engine-Build.md",
+        "sha256": "172c6983266e062db1199eab33724d2986bd668bafa89415aaf9063a723a2cf6"
+      },
+      {
+        "path": "Tools/MacOS/Brewfile",
+        "sha256": "9e84bf75e65aab8700fc82316a940e6e13377cc0f347a36c1312ac3896ee67e5"
+      },
+      {
+        "path": "Redesign/Linux/Dockerfile",
+        "sha256": "23a41654e0b8cbb656ea84f34e5cc7dd856762b75186199b6afe0387ae0b5e8f"
+      },
+      {
+        "path": "Redesign/Linux/Ubuntu26.lock.json",
+        "sha256": "a15e68d0675262595feef189a802584a81a7900a513c28ef6c03f72541ced9c4"
+      }
+    ],
+    "overlay": [
+      {
+        "mode": "100644",
+        "path": "BuildScripts/Windows/gperf_launcher.c",
+        "sha256": "ae90af5d03c5c6956090789c31502e4f06c9a56c9bf64911b7f5f9d64773e23f"
+      },
+      {
+        "mode": "100644",
+        "path": "Dependencies/EngawaRuntime.lock.json",
+        "sha256": "ea180dd2bd2f3332c2b797bd8e20ad98b7857ed15ae55c75b4e3eba24f1a0f9d"
+      },
+      {
+        "mode": "100644",
+        "path": "SDK/EngawaRuntimeFeaturePolicy.json",
+        "sha256": "e70b8295dbeaabd862d35a741b2a4aed3bbc012bd18a8e61a4a070e2723da9c2"
+      },
+      {
+        "mode": "100644",
+        "path": "SDK/EngawaRuntimeUtilsWindowsExports.def",
+        "sha256": "ff046c8274bbfc74e6935add75ea2e5c996321efee8feb6da314e3141c88ccfa"
+      },
+      {
+        "mode": "100644",
+        "path": "SDK/EngawaRuntimeVersion.cmake",
+        "sha256": "e2c2dc9c5fba8b400cee571bb3564ae64f9dbd21a7b2beda519ec222a15636e3"
+      },
+      {
+        "mode": "100644",
+        "path": "SDK/include/engawa_webcore.h",
+        "sha256": "12bcd274934b3f104c2fc735330f6eb46acb39c0b7a7be148ecf3045b755b181"
+      },
+      {
+        "mode": "100644",
+        "path": "SDK/licenses/ENGAWA-LGPL-NOTICE.txt",
+        "sha256": "70226e206ac5c9976976230f342a32ae05544daf6585859e29b978a254b7e199"
+      },
+      {
+        "mode": "100644",
+        "path": "SDK/licenses/ENGAWA-PUBLIC-BSD-2-CLAUSE.txt",
+        "sha256": "89d2a927a3fd51e02c48cbd91512ea4683afeb757a4289e7928989de906f0f86"
+      },
+      {
+        "mode": "100644",
+        "path": "SDK/licenses/HarfBuzz/11.2.1/COPYING",
+        "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64"
+      },
+      {
+        "mode": "100644",
+        "path": "SDK/licenses/ICU/77.1/LICENSE",
+        "sha256": "451167c55c0fa447cc2d5632714f5e3c567fe4f1e1badefab2c1333852198aca"
+      },
+      {
+        "mode": "100644",
+        "path": "SDK/licenses/libwpe/1.16.3/COPYING",
+        "sha256": "35bef295cedbbf179eaee14328002587a0e7dc08ebf3f15ea080a6f2815f0d7b"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/JavaScriptCore/PlatformEngawa.cmake",
+        "sha256": "4d75d1f8c5e41c727ce595bca760810923ec484914f6baab8964a46c31ff689c"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/PlatformEngawa.cmake",
+        "sha256": "47330c9938c6de09422ec2803017f745968b50903078757309dbd5f89669746c"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/ThirdParty/ANGLE/PlatformEngawa.cmake",
+        "sha256": "049a04c22d8494884a8baeb1ca36f89daa0c60cfc36d331ae643ef0670d542b4"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/WTF/wtf/PlatformEngawa.cmake",
+        "sha256": "4d75d1f8c5e41c727ce595bca760810923ec484914f6baab8964a46c31ff689c"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/WebCore/PAL/pal/PlatformEngawa.cmake",
+        "sha256": "4c469bdb9da0c6bbb5e5eb75f44cbf718af39d88340cd1a0816ffe8a33ffde49"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/WebCore/PlatformEngawa.cmake",
+        "sha256": "9556a2df4d9e2eeaef9fc5a82745a5532537408c45d87fb9c92a3863eeeaeeb0"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/WebCore/platform/engawa/EngawaInProcessWebCorePrototype.cpp",
+        "sha256": "76aa45a1eaf985574715f343200d27d4bb19d86a57e019d84ac13b6d09043b52"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/WebCore/platform/engawa/EngawaInProcessWebCorePrototype.h",
+        "sha256": "40e804d2cd70f4d13eae525bb223fb7c610e7945e377dd737fc3c63bf4e5aa51"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/WebCore/platform/engawa/EngawaWebCoreBridge.cpp",
+        "sha256": "2a707f1bb13f5d73c5d669d145d31d6640d80a9d6c6e9b50f6189b2a5ed8f1c7"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/bmalloc/PlatformEngawa.cmake",
+        "sha256": "bb28b63095f5a511ebeb8dffe5f74aa4661f266f86b33fd8a5c7453d90a07236"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/cmake/EngawaInProcessWPELoader.c",
+        "sha256": "29b82c34155531a476eec388e6984bb5c3359b8f011a0285f3cc9fac635810d1"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/cmake/EngawaRuntimeUtilsAnchor.cpp",
+        "sha256": "ef720808a61baf4b7f2d8c6a1b341a8fd2138668dfb043de64ef8e4d96287ffd"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/cmake/EngawaSharedLibraries.cmake",
+        "sha256": "8a66ac32321f4a12e35a0894bdc32da6aead76a6bd816a6b92e6a309965b63d0"
+      },
+      {
+        "mode": "100644",
+        "path": "Source/cmake/OptionsEngawa.cmake",
+        "sha256": "2fd0b59174c8dbb9186cc67c389c4dd019111480925e5b4e012d81380e21fcde"
+      },
+      {
+        "mode": "100644",
+        "path": "Tools/EngawaRuntime/ConfigureEngawaRuntimeUtilsParentLink.cmake",
+        "sha256": "70c78d6a3a8318b8f80ba5010651378d24a8f0dd71731a1fa797a20d2ccb545d"
+      },
+      {
+        "mode": "100644",
+        "path": "Tools/EngawaRuntime/EngawaRuntimeUtils/CMakeLists.txt",
+        "sha256": "cc5fe18f9cdc947b8f7ed688dccec3221a9c1f438d4a13c905cb124c659ad686"
+      },
+      {
+        "mode": "100644",
+        "path": "Tools/EngawaRuntime/EngawaRuntimeUtils/EngawaRuntimeUtils.cpp",
+        "sha256": "400a8d92dc75141659fc8eef6ccb9b0d6ec2ed59194b37508d26ab6fd21de364"
+      },
+      {
+        "mode": "100644",
+        "path": "Tools/EngawaRuntime/EngawaRuntimeUtils/IntegrateEngawaRuntimeUtils.cmake",
+        "sha256": "a2e290e83c26be73549822f24c08efbdf6f8bc58f73806d9d1d00ba8b5c03f68"
+      },
+      {
+        "mode": "100644",
+        "path": "Tools/PlatformEngawa.cmake",
+        "sha256": "c01586c55a0f755df030e0c7250fb2054da28005a5e372e8aac80cef5f96e57d"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils-production/libpsl/portfile.cmake",
+        "sha256": "79b95bdbc0affa33ccf5f2fca0e94b723c57abac5f43c07eabf0ca8d5b8d9938"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils-production/libpsl/vcpkg.json",
+        "sha256": "3bd58c7bfa8eaf1375b273ce2b3a03116fa2d3580367f53149e0a4c8754eb4dc"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/.gitattributes",
+        "sha256": "031ea8369cb733f314d3e28a57fa7674148dabc3b627f95cc29fa25ab6354ea7"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/ORIGIN.md",
+        "sha256": "254c84d4c6b5f98f0d4fd8e99fe21e139e6ddb031052e9951506739f1946734b"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/patches/0001-Add-CMake-platform.patch",
+        "sha256": "e6c9699b3ee94befdfc02ea4dfb57a8cfc56f5a5123d8df09ed156fff620e6ab"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/patches/0002-Remove-install-suffix-on-Windows.patch",
+        "sha256": "0ae8e39d0378b75d4b98bacd656f252c8abbd3932791633dc8b732e5d329fd07"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/patches/0003-Support-cross-compilation-in-CMake-build.patch",
+        "sha256": "5cf0f99f5d330e1ad1825468ff44b43321e7da1fe111d7ff484eb01d0883bc74"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/patches/0004-Cross-compilation-support-for-pkgdata.patch",
+        "sha256": "736ae8d7d9a93c234589df6f28b14f49dbf39a6b2dcd319925315aeafbd9af4e"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/patches/0005-Do-not-export-static-data-entry-point.patch",
+        "sha256": "0b80b4e76ecdaf61c46c0a1caa2fa7e209408c914dddbb9649d2212ccd6df0e4"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/pkgconfig/debug/icu-i18n.pc",
+        "sha256": "323e36b8ab8de684d6a11a26d4561450819181eae8beec1e35ea25b198c517e6"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/pkgconfig/debug/icu-io.pc",
+        "sha256": "4c558476af7c97c89d7ddcd596339418bbb752dce468929469cd087894df13bc"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/pkgconfig/debug/icu-uc.pc",
+        "sha256": "c1aa96f8b70ec205723dc06510c6828f1b72131de598d5561f0a93d85fa7d668"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/pkgconfig/release/icu-i18n.pc",
+        "sha256": "66f0b1757629f3080cfa788b275adc453b78b65d27a391aa3d28c847bb835831"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/pkgconfig/release/icu-io.pc",
+        "sha256": "ce0b6a22c8173b17f32273a7fea4d62d1a926cedec5bb6f8032a156dc19b3646"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/pkgconfig/release/icu-uc.pc",
+        "sha256": "9880e43a46b5f5c31f59835b974ff14416ccad303598d02dd34f9de82be887cf"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/portfile.cmake",
+        "sha256": "928aa94b0af5cafdc04b16dc2eda0b171caf8e7906c118d93c4ffed40a6a8193"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/ports/engawaruntimeutils/icu/vcpkg.json",
+        "sha256": "86cd94bc3ab2b67a9a63240f6335efc6ed73e015fa1a2da96a14af53bedbf112"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/triplets/x64-windows-engawaruntimeutils-production.cmake",
+        "sha256": "9ae9a0a217de4d288c6f8eb8e76bf3173745fb933b4b10d010b01432cc2ef2b5"
+      },
+      {
+        "mode": "100644",
+        "path": "WebKitLibraries/triplets/x64-windows-engawaruntimeutils.cmake",
+        "sha256": "f82ee51d28ed3b920f555e4a3555021c328ad252252994beb3588cb5d9912dbf"
+      }
+    ],
+    "patch_sha256": "da1ed9f1283b9e257168823ae4ac194957306afa08258a784933a82e0cde65ed",
+    "schema_version": 2,
+    "sdk_version": "1.4.0",
+    "tools": {
+      ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      ".gitignore": "1c56858c5b0aeed17f3f39b87b19a1354f24bc9cc2c5ffb1b14cd9b84d0524c3",
+      "README.md": "3219e8efb2e85bcd104a5c40c0547f12f414f595510918a1c2baa6b19f371fa9",
+      "build_public_engine.py": "0cdafb7fffb2512b1a5470888a9b013d0a2e6cd4aad8f36d5acdeb01f593d830",
+      "licenses/BSD-2-Clause-Engawa-Tools.txt": "3277be8eb8a0562f6e35ea70d6c28b8b79425fc382c2900f862af93d71d14435",
+      "prepare_source.py": "90af6ad7b4a8ad8c459d8081de9874108c184d9d6a5c7e9a75544a2cc8d7faca"
+    },
+    "upstream_commit": "cf9c1ca91a47666c6aa6c80310936ed064f122e0",
+    "upstream_tree": "869c930568fe61bb1d22093ace23a2b13a9aace1",
+    "upstream_url": "https://github.com/WebKit/WebKit.git"
+  },
+  "source_identity_sha256": "f3b8ac04bcb4d5a799ffdaeefe670309cb79f2798bb6e7393f8ce89650482851"
+}

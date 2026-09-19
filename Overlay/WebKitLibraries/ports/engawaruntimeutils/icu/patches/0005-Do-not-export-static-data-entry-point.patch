@@ -1,0 +1,13 @@
+diff --git a/source/tools/pkgdata/pkgdata.cpp b/source/tools/pkgdata/pkgdata.cpp
+index 1516f7d..be54898 100644
+--- a/source/tools/pkgdata/pkgdata.cpp
++++ b/source/tools/pkgdata/pkgdata.cpp
+@@ -794,7 +794,7 @@ static int32_t pkg_executeOptions(UPKGOptions *o) {
+                         nullptr,
+                         gencFilePath,
+                         sizeof(gencFilePath),
+-                        true);
++                        !IN_STATIC_MODE(mode));
+                     pkg_destroyOptMatchArch(optMatchArch);
+ #if U_PLATFORM_IS_LINUX_BASED
+                     result = pkg_generateLibraryFile(targetDir, mode, gencFilePath);

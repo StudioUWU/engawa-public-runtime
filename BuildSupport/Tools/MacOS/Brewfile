@@ -1,0 +1,14 @@
+brew "cmake"
+brew "ninja"
+brew "python@3.11", link: false
+brew "ruby@3.3", link: false
+brew "perl"
+brew "gperf"
+brew "pkgconf"
+brew "icu4c@77", link: false
+brew "autoconf"
+brew "automake"
+brew "libtool"
+brew "vcpkg"
+brew "git-lfs"
+brew "sevenzip"

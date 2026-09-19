@@ -1,0 +1,30 @@
+EngawaRuntime SDK 1.4.0 uses WebCore and JavaScriptCore from WebKit.
+The engine libraries contain code under the GNU Lesser General Public License
+and other licenses. The included per-component license texts govern that code;
+the proprietary EngawaRuntime license does not replace or restrict them.
+
+WebCore, JavaScriptCore and EngawaRuntimeUtils are separate shared libraries.
+Recipients may replace covered libraries with modified, interface-compatible
+versions and may reverse engineer the combined work for debugging modifications
+to those libraries to the extent required by LGPL 2.1 section 6. Any general
+restriction on modification or reverse engineering must preserve these rights.
+
+Binary delivery requires the exact corresponding source for the covered
+libraries, including local modifications, interface definitions, generated-source
+inputs, and scripts used to control compilation and installation. A link to an
+unmodified or moving upstream branch alone does not provide that source.
+
+The distributor must supply the exact source archive alongside the binary
+download (or use another applicable license-compliant delivery mechanism).
+Record the archive hash and release-specific location with each distribution.
+This development notice does not claim that source has already been published.
+
+Replace all matching architecture libraries together when an engine ABI change
+requires it. Keep the public C ABI compatible with the proprietary runtime.
+Package-authoring hashes detect accidental changes before publication; they
+are not a runtime authorization requirement for a recipient's modified library.
+On macOS the consuming application must provide a workable local rebuild and
+re-signing route, including library-validation policy that permits replacement.
+
+SDK 1.4.0 source publication, clean public-source rebuilds, modified-library
+replacement tests, and exact-distribution license review remain release gates.
