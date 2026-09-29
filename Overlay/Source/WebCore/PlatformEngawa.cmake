@@ -2,15 +2,20 @@ if (APPLE)
     include("${CMAKE_CURRENT_LIST_DIR}/PlatformMac.cmake")
 
     if (ER_ENABLE_INPROCESS_SHARED_LIBRARIES)
-        # PlatformCocoa signs the WebCore framework after linking. The Engawa
-        # monolithic graph intentionally builds WebCore as a static archive,
-        # so there is no framework binary to sign.
+        # The split SDK signs its regular dylibs after final packaging rather
+        # than using PlatformCocoa's framework post-build signing command.
         set(WebCore_POST_BUILD_COMMAND)
 
+        # PAL is an object library owned by WebCore in the split graph. Its
+        # objects are already linked by WEBKIT_FRAMEWORK; there is no archive
+        # for the Cocoa port's force_load expression to address.
+        list(REMOVE_ITEM WebCore_EXTRA_LINK_OPTIONS
+            "SHELL:-Wl,-force_load $<TARGET_FILE:PAL>"
+        )
+
         # PlatformCocoa tolerates unresolved symbols when WebGPU is disabled
-        # because its normal framework graph supplies them at load time. The
-        # Engawa runtime is the final monolithic image, so unresolved WebCore
-        # symbols must fail its link instead of surviving until dyld.
+        # because its normal framework graph supplies them at load time.
+        # The independently replaceable WebCore dylib must resolve its links.
         list(REMOVE_ITEM WebCore_PRIVATE_LIBRARIES
             "-Wl,-undefined,dynamic_lookup"
         )

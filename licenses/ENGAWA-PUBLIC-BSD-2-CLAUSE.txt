@@ -1,0 +1,45 @@
+EngawaRuntime 1.4.0 newly authored public integration code
+
+The following newly authored files identify this BSD-2-Clause license in their
+own headers. Paths are relative to the reconstructed public engine source:
+
+  BuildScripts/split_sdk.py
+  SDK/include/engawa_webcore.h
+  Source/WebCore/platform/engawa/EngawaWebCoreBridge.cpp
+  Source/cmake/EngawaSharedLibraries.cmake
+  Source/cmake/EngawaRuntimeUtilsAnchor.cpp
+  Tests/SharedEngineGraph/CMakeLists.txt
+  Tests/SharedEngineGraph/PrepareICU/CMakeLists.txt
+  Tests/SharedEngineGraph/VerifyRelocation.cmake
+  Tests/SharedEngineGraph/consumer.c
+
+This notice does not relicense existing or relocated upstream/Engawa code,
+third-party dependencies, or the proprietary runtime. Preserve each file's
+original notices. The public source export supplies separate notices for its
+standalone preparation and build tools.
+
+BSD 2-Clause License
+
+Copyright (C) 2026 EngawaRuntime contributors.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.

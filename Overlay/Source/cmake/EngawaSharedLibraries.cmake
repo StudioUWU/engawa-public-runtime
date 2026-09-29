@@ -16,6 +16,12 @@ function(er_add_unix_runtime_utils)
         CXX_VISIBILITY_PRESET hidden VISIBILITY_INLINES_HIDDEN ON
         POSITION_INDEPENDENT_CODE ON)
     set(_er_archive_targets ICU::i18n ICU::uc ICU::data)
+    set(_er_system_links)
+    if (NOT APPLE)
+        # Validate against the same system closure used by the final link.
+        # CMake's FindICU carries the dynamic-loader dependency on ICU::uc.
+        list(APPEND _er_system_links ${CMAKE_DL_LIBS} Threads::Threads)
+    endif ()
     if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
         list(APPEND _er_archive_targets HarfBuzz::ICU HarfBuzz::HarfBuzz WPE::libwpe)
         # libwpe's static loader directly references this backend hook. Own it
@@ -44,7 +50,7 @@ function(er_add_unix_runtime_utils)
         if (NOT EGL_LIBRARIES)
             message(FATAL_ERROR "Linux Utils requires the selected EGL libraries.")
         endif ()
-        set(_er_system_links Freetype::Freetype XkbCommon::XkbCommon ${EGL_LIBRARIES})
+        list(APPEND _er_system_links Freetype::Freetype XkbCommon::XkbCommon ${EGL_LIBRARIES})
     endif ()
     foreach (_er_dependency IN LISTS _er_archive_targets)
         if (NOT TARGET ${_er_dependency})
@@ -97,7 +103,7 @@ function(er_add_unix_runtime_utils)
     if (NOT APPLE)
         # Keep system dependencies after the archive objects for --as-needed.
         target_link_libraries(EngawaRuntimeUtils PRIVATE
-            ${_er_system_links} "${CMAKE_DL_LIBS}" Threads::Threads)
+            ${_er_system_links})
         target_link_options(EngawaRuntimeUtils PRIVATE "LINKER:-z,defs")
     endif ()
 endfunction()
@@ -127,6 +133,16 @@ function(er_configure_shared_engine)
         set_property(TARGET ${_er_target} PROPERTY VERSION)
         set_property(TARGET ${_er_target} PROPERTY SOVERSION)
         if (APPLE)
+            if (_er_target STREQUAL "WebCore")
+                # Upstream restricts WebCore to Apple's WebKit framework
+                # clients. This regular, replaceable SDK dylib must also link
+                # from EngawaRuntime and independent recipient applications.
+                get_target_property(_er_webcore_link_options WebCore LINK_OPTIONS)
+                list(FILTER _er_webcore_link_options EXCLUDE REGEX
+                    "^LINKER:-(allowable_client|umbrella),")
+                set_property(TARGET WebCore PROPERTY LINK_OPTIONS
+                    "${_er_webcore_link_options}")
+            endif ()
             set_target_properties(${_er_target} PROPERTIES
                 INSTALL_NAME_DIR "@rpath" MACOSX_RPATH ON
                 BUILD_WITH_INSTALL_NAME_DIR ON INSTALL_RPATH "@loader_path")

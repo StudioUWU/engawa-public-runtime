@@ -3338,6 +3338,30 @@ diff --git a/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedPlat
  
 -#endif // USE(COORDINATED_GRAPHICS) && ENABLE(VIDEO)
 +#endif // USE(COORDINATED_GRAPHICS) && (ENABLE(VIDEO) || ER_INPROCESS_EMBEDDED_ENGINE)
+diff --git a/Source/WebCore/PAL/pal/system/mac/WebPanel.h b/Source/WebCore/PAL/pal/system/mac/WebPanel.h
+--- a/Source/WebCore/PAL/pal/system/mac/WebPanel.h
++++ b/Source/WebCore/PAL/pal/system/mac/WebPanel.h
+@@ -30 +30,4 @@
++#if defined(ER_INPROCESS_EMBEDDED_ENGINE)
++__attribute__((objc_runtime_name("ERWebPanel")))
++#endif
+ PAL_EXPORT @interface WebPanel : NSPanel
+diff --git a/Source/WebCore/platform/mac/CursorMac.mm b/Source/WebCore/platform/mac/CursorMac.mm
+--- a/Source/WebCore/platform/mac/CursorMac.mm
++++ b/Source/WebCore/platform/mac/CursorMac.mm
+@@ -44 +44,4 @@
++#if defined(ER_INPROCESS_EMBEDDED_ENGINE)
++__attribute__((objc_runtime_name("ERWebCustomCursor")))
++#endif
+ @interface WebCustomCursor : NSCursor
+diff --git a/Source/WebCore/testing/cocoa/WebViewVisualIdentificationOverlay.h b/Source/WebCore/testing/cocoa/WebViewVisualIdentificationOverlay.h
+--- a/Source/WebCore/testing/cocoa/WebViewVisualIdentificationOverlay.h
++++ b/Source/WebCore/testing/cocoa/WebViewVisualIdentificationOverlay.h
+@@ -34 +34,4 @@
++#if defined(ER_INPROCESS_EMBEDDED_ENGINE)
++__attribute__((objc_runtime_name("ERWebViewVisualIdentificationOverlay")))
++#endif
+ WEBCORE_EXPORT
 diff --git a/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedPlatformLayerBufferHolePunch.cpp b/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedPlatformLayerBufferHolePunch.cpp
 --- a/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedPlatformLayerBufferHolePunch.cpp
 +++ b/Source/WebCore/platform/graphics/texmap/coordinated/CoordinatedPlatformLayerBufferHolePunch.cpp

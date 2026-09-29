@@ -18,9 +18,37 @@ The resulting checkout retains only upstream Git history. Make library changes
 there after preparation. Build/ is ignored so downloaded source and generated
 outputs stay out of this repository. Windows needs permission to create real
 source symlinks (for example Developer Mode) and room for the full WebKit tree.
-The two standalone Python tools use the accompanying
-licenses/BSD-2-Clause-Engawa-Tools.txt. Upstream and overlay files retain their
-own notices and licenses; the tools' license does not relicense those files.
+
+## Licensing and disclaimer
+
+WebKit, including WebCore and JavaScriptCore, contains code covered by the
+GNU Lesser General Public License (LGPL) and BSD licenses. LGPL 2.1 applies to
+covered portions where their file notices permit that version, including a
+permitted later-version choice. The original LGPL 2 and LGPL 2.1 texts and
+Apple's BSD license are included unchanged from the pinned WebKit commit.
+
+[WebKit's contribution policy](https://docs.webkit.org/Other/Licensing.html)
+uses BSD 2-Clause for new code contributed to WebKit. Updates to existing code
+retain the original copyright notices and applicable license terms; they do
+not automatically become BSD-licensed.
+
+EngawaRuntime's newly authored public integration code is licensed under
+**BSD 2-Clause**, within the scope of its accompanying license notice. This
+does not relicense existing WebKit code, dependencies, or the proprietary runtime.
+See the root [LICENSE](LICENSE) for the licensing overview and these full texts:
+
+- [EngawaRuntime public BSD 2-Clause](licenses/ENGAWA-PUBLIC-BSD-2-CLAUSE.txt).
+- [Standalone tools BSD 2-Clause](licenses/BSD-2-Clause-Engawa-Tools.txt).
+- [WebKit LGPL 2.1](licenses/WebKit/LICENSE-LGPL-2.1).
+- [WebKit LGPL 2](licenses/WebKit/LICENSE-LGPL-2).
+- [JavaScriptCore license](licenses/JavaScriptCore/COPYING.LIB).
+- [Apple WebKit BSD 2-Clause](licenses/WebKit/LICENSE-APPLE).
+
+All per-file and dependency notices remain applicable. The software is provided
+without warranty, subject to the disclaimers in those licenses. See also
+[WebKit's licensing information](https://webkit.org/licensing-webkit/).
+
+## Building the public engine
 
 Follow BuildSupport/Guides/SDK-1.4.0-Public-Engine-Build.md for the concrete
 native Windows, Mac, and locked Linux dependency and configure commands.

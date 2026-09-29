@@ -1,24 +1,29 @@
-BSD 2-Clause License
+EngawaRuntime public engine licensing notice
 
-Copyright (c) 2026, StudioUWU
+This source distribution contains code under multiple licenses. The following
+license texts and the notices in individual source files govern their
+respective portions; this notice does not replace or relicense them.
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
+EngawaRuntime newly authored public integration code: BSD 2-Clause, as scoped
+in licenses/ENGAWA-PUBLIC-BSD-2-CLAUSE.txt. The standalone preparation and build
+tools use licenses/BSD-2-Clause-Engawa-Tools.txt.
 
-1. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
+WebKit, including WebCore and JavaScriptCore, contains LGPL- and BSD-licensed
+code. LGPL 2.1 applies to covered portions where their notices permit that
+version, including a permitted later-version choice. Retain all original
+copyright and license notices.
 
-2. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
+  licenses/WebKit/LICENSE-LGPL-2.1       GNU Lesser GPL version 2.1
+  licenses/WebKit/LICENSE-LGPL-2         GNU Library GPL version 2
+  licenses/JavaScriptCore/COPYING.LIB    JavaScriptCore's GNU Library GPL text
+  licenses/WebKit/LICENSE-APPLE         Apple's BSD 2-Clause license
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+New code contributed to WebKit uses BSD 2-Clause. Updates to existing code
+remain subject to that code's original notices and license terms.
+See https://docs.webkit.org/Other/Licensing.html and
+https://webkit.org/licensing-webkit/ for upstream licensing information.
+
+Other dependencies retain their own licenses, including notices under
+Overlay/SDK/licenses/ and in the prepared upstream source. No BSD grant here
+relicenses LGPL-covered code, third-party code, or the proprietary runtime.
+The software is supplied without warranty as stated in the applicable licenses.

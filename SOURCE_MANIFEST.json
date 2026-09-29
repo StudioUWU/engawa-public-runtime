@@ -29,8 +29,32 @@
       "sha256": "9e84bf75e65aab8700fc82316a940e6e13377cc0f347a36c1312ac3896ee67e5"
     },
     {
+      "path": "LICENSE",
+      "sha256": "0fb76e3df148f1f97e615d72dc68beb789ee02a99f69487f882647a18037bfbd"
+    },
+    {
       "path": "licenses/BSD-2-Clause-Engawa-Tools.txt",
       "sha256": "3277be8eb8a0562f6e35ea70d6c28b8b79425fc382c2900f862af93d71d14435"
+    },
+    {
+      "path": "licenses/ENGAWA-PUBLIC-BSD-2-CLAUSE.txt",
+      "sha256": "89d2a927a3fd51e02c48cbd91512ea4683afeb757a4289e7928989de906f0f86"
+    },
+    {
+      "path": "licenses/JavaScriptCore/COPYING.LIB",
+      "sha256": "5094ecb9c9dcd0eadc34f3c11511d9b5535063032bc150164ecd1a5d5a445547"
+    },
+    {
+      "path": "licenses/WebKit/LICENSE-APPLE",
+      "sha256": "0b5d3a7cc325942567373b0ecd757d07c132e0ebd7c97bfc63f7e1a76094edb4"
+    },
+    {
+      "path": "licenses/WebKit/LICENSE-LGPL-2",
+      "sha256": "7555fa34bc131a75ca56d65c40cc1ea8f9515d23e353d4c15d58573a042f7805"
+    },
+    {
+      "path": "licenses/WebKit/LICENSE-LGPL-2.1",
+      "sha256": "f2b3bd09663381deb99721109d22b47af1213bb43007a8b56a06c6375c8050ce"
     },
     {
       "path": "Overlay/BuildScripts/Windows/gperf_launcher.c",
@@ -90,11 +114,11 @@
     },
     {
       "path": "Overlay/Source/cmake/EngawaSharedLibraries.cmake",
-      "sha256": "8a66ac32321f4a12e35a0894bdc32da6aead76a6bd816a6b92e6a309965b63d0"
+      "sha256": "6f51f9923dc70334b4ca815cb97db2b9e7c9eb63f088f1be7864cd6db580a122"
     },
     {
       "path": "Overlay/Source/cmake/OptionsEngawa.cmake",
-      "sha256": "2fd0b59174c8dbb9186cc67c389c4dd019111480925e5b4e012d81380e21fcde"
+      "sha256": "0f5ae45fea3117a1712e7cd22fdb9d267316dca7427b2f2c2ddb00636934f979"
     },
     {
       "path": "Overlay/Source/JavaScriptCore/PlatformEngawa.cmake",
@@ -126,7 +150,7 @@
     },
     {
       "path": "Overlay/Source/WebCore/PlatformEngawa.cmake",
-      "sha256": "9556a2df4d9e2eeaef9fc5a82745a5532537408c45d87fb9c92a3863eeeaeeb0"
+      "sha256": "3210298d8fb10f22a5f5d8ccb0d54ce1120274e527e4a5606be1a949c3ee7f33"
     },
     {
       "path": "Overlay/Source/WTF/wtf/PlatformEngawa.cmake",
@@ -230,7 +254,7 @@
     },
     {
       "path": "Patches/WebKit.patch",
-      "sha256": "da1ed9f1283b9e257168823ae4ac194957306afa08258a784933a82e0cde65ed"
+      "sha256": "dadc12fa591dc5358dbf38f6a998b317d1a38b870e180bd7dca5c4843b70b983"
     },
     {
       "path": "prepare_source.py",
@@ -238,7 +262,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "3219e8efb2e85bcd104a5c40c0547f12f414f595510918a1c2baa6b19f371fa9"
+      "sha256": "cfed1790c8a47cc0a273975247241c10802d43ab922bf4da1201ba6d04c5b91d"
     }
   ],
   "product": "EngawaRuntime public engine",
@@ -263,6 +287,13 @@
         "sha256": "a15e68d0675262595feef189a802584a81a7900a513c28ef6c03f72541ced9c4"
       }
     ],
+    "licenses": {
+      "licenses/ENGAWA-PUBLIC-BSD-2-CLAUSE.txt": "89d2a927a3fd51e02c48cbd91512ea4683afeb757a4289e7928989de906f0f86",
+      "licenses/JavaScriptCore/COPYING.LIB": "5094ecb9c9dcd0eadc34f3c11511d9b5535063032bc150164ecd1a5d5a445547",
+      "licenses/WebKit/LICENSE-APPLE": "0b5d3a7cc325942567373b0ecd757d07c132e0ebd7c97bfc63f7e1a76094edb4",
+      "licenses/WebKit/LICENSE-LGPL-2": "7555fa34bc131a75ca56d65c40cc1ea8f9515d23e353d4c15d58573a042f7805",
+      "licenses/WebKit/LICENSE-LGPL-2.1": "f2b3bd09663381deb99721109d22b47af1213bb43007a8b56a06c6375c8050ce"
+    },
     "overlay": [
       {
         "mode": "100644",
@@ -347,7 +378,7 @@
       {
         "mode": "100644",
         "path": "Source/WebCore/PlatformEngawa.cmake",
-        "sha256": "9556a2df4d9e2eeaef9fc5a82745a5532537408c45d87fb9c92a3863eeeaeeb0"
+        "sha256": "3210298d8fb10f22a5f5d8ccb0d54ce1120274e527e4a5606be1a949c3ee7f33"
       },
       {
         "mode": "100644",
@@ -382,12 +413,12 @@
       {
         "mode": "100644",
         "path": "Source/cmake/EngawaSharedLibraries.cmake",
-        "sha256": "8a66ac32321f4a12e35a0894bdc32da6aead76a6bd816a6b92e6a309965b63d0"
+        "sha256": "6f51f9923dc70334b4ca815cb97db2b9e7c9eb63f088f1be7864cd6db580a122"
       },
       {
         "mode": "100644",
         "path": "Source/cmake/OptionsEngawa.cmake",
-        "sha256": "2fd0b59174c8dbb9186cc67c389c4dd019111480925e5b4e012d81380e21fcde"
+        "sha256": "0f5ae45fea3117a1712e7cd22fdb9d267316dca7427b2f2c2ddb00636934f979"
       },
       {
         "mode": "100644",
@@ -510,13 +541,14 @@
         "sha256": "f82ee51d28ed3b920f555e4a3555021c328ad252252994beb3588cb5d9912dbf"
       }
     ],
-    "patch_sha256": "da1ed9f1283b9e257168823ae4ac194957306afa08258a784933a82e0cde65ed",
+    "patch_sha256": "dadc12fa591dc5358dbf38f6a998b317d1a38b870e180bd7dca5c4843b70b983",
     "schema_version": 2,
     "sdk_version": "1.4.0",
     "tools": {
       ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
       ".gitignore": "1c56858c5b0aeed17f3f39b87b19a1354f24bc9cc2c5ffb1b14cd9b84d0524c3",
-      "README.md": "3219e8efb2e85bcd104a5c40c0547f12f414f595510918a1c2baa6b19f371fa9",
+      "LICENSE": "0fb76e3df148f1f97e615d72dc68beb789ee02a99f69487f882647a18037bfbd",
+      "README.md": "cfed1790c8a47cc0a273975247241c10802d43ab922bf4da1201ba6d04c5b91d",
       "build_public_engine.py": "0cdafb7fffb2512b1a5470888a9b013d0a2e6cd4aad8f36d5acdeb01f593d830",
       "licenses/BSD-2-Clause-Engawa-Tools.txt": "3277be8eb8a0562f6e35ea70d6c28b8b79425fc382c2900f862af93d71d14435",
       "prepare_source.py": "90af6ad7b4a8ad8c459d8081de9874108c184d9d6a5c7e9a75544a2cc8d7faca"
@@ -525,5 +557,5 @@
     "upstream_tree": "869c930568fe61bb1d22093ace23a2b13a9aace1",
     "upstream_url": "https://github.com/WebKit/WebKit.git"
   },
-  "source_identity_sha256": "f3b8ac04bcb4d5a799ffdaeefe670309cb79f2798bb6e7393f8ce89650482851"
+  "source_identity_sha256": "6ad21945e75406c92d45692a3d2173f01e190e48de668a49cd1e58be0f6f334d"
 }

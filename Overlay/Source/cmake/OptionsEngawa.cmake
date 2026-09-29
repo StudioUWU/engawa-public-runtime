@@ -364,6 +364,12 @@ if (ER_ENABLE_WEBKIT_ENGINE OR ER_ENABLE_INPROCESS_ENGINE)
 
         include(OptionsWPE)
 
+        # Skia discovers FreeType in its own directory, but that imported
+        # target is not visible to the parent shared-Utils configuration.
+        # Discover it here so both Skia and the static HarfBuzz closure use
+        # the same target throughout the Linux source graph.
+        find_package(Freetype 2.9.0 REQUIRED)
+
         # FindWPE creates an imported target for the selected archive, but it
         # does not preserve the Requires closure from libwpe's pkg-config
         # metadata.  That closure is part of the locked static libwpe contract:
